@@ -1,0 +1,112 @@
+:root{
+  --navy:#0f1f3a;
+  --green:#7aa64a;
+  --blue:#1e3a8a;
+  --red:#7f1d1d;
+  --bg:#f4f6f8;
+  --muted:#6b7280;
+  --card-bg:#fff;
+}
+
+*{box-sizing:border-box}
+body{
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  margin:0;
+  color:#111827;
+  background:var(--bg);
+  text-align:center;
+}
+
+header{
+  background:linear-gradient(135deg,var(--navy),#0b162b);
+  color:#fff;
+  padding:22px;
+  display:flex;
+  gap:12px;
+  align-items:center;
+  justify-content:center;
+  flex-direction:column;
+  box-shadow:0 4px 12px rgba(0,0,0,0.12);
+}
+header img{height:64px}
+header h1{margin:0;font-size:22px;font-weight:700}
+
+main{
+  max-width:1200px;
+  margin:24px auto;
+  padding:18px;
+  display:flex;
+  flex-direction:column;
+  gap:16px;
+  align-items:center;
+}
+
+.controls{
+  background:var(--card-bg);
+  padding:14px;
+  border-radius:10px;
+  display:flex;
+  gap:12px;
+  align-items:center;
+  box-shadow:0 6px 20px rgba(0,0,0,0.06);
+}
+
+.file-label, .btn{
+  padding:10px 16px;
+  border-radius:8px;
+  font-weight:600;
+  cursor:pointer;
+  border:none;
+  background:var(--green);
+  color:white;
+}
+
+.file-label input{display:none}
+.btn{background:#e5e7eb;color:#111827}
+.btn.primary{background:var(--green);color:#fff}
+.or{color:var(--muted);font-size:13px;padding:0 6px}
+
+.drop-area{
+  width:100%;
+  max-width:800px;
+  padding:18px;
+  border:2px dashed #d1d5db;
+  border-radius:10px;
+  background:linear-gradient(180deg, rgba(255,255,255,0.8), rgba(255,255,255,0.6));
+}
+.hidden{display:none}
+
+.hint{font-size:13px;color:#374151}
+
+.tables{width:100%}
+
+h2{margin:20px 0 8px}
+
+table{
+  margin:8px auto 20px;
+  border-collapse:collapse;
+  background:var(--card-bg);
+  font-size:13px;
+  min-width:560px;
+}
+th, td{
+  padding:8px 10px;
+  border:1px solid #d1d5db;
+  white-space:nowrap;
+}
+.blue th{background:var(--blue);color:#fff}
+.red th{background:var(--red);color:#fff}
+.totals{font-weight:700;background:#e5e7eb}
+
+.table-actions{
+  display:flex;
+  gap:8px;
+  justify-content:center;
+  margin-bottom:10px;
+}
+
+.small-btn{
+  background:#111827;color:#fff;padding:6px 10px;border-radius:6px;border:none;cursor:pointer;font-size:13px;
+}
+
+footer{padding:18px;color:var(--muted);font-size:13px}
